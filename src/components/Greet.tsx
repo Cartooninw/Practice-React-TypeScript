@@ -16,11 +16,12 @@
 
 type GreetType = { 
   name : string
+  Option?: string
 }
 const Greet = (probs : GreetType) => {
   return (
     <div>
-      <h2>Welcom {probs.name} You have 10 unread messages</h2>
+      <h2>Welcome {probs.name} You have 10 unread messages</h2>
     </div>
   )
 }

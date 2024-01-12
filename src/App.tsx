@@ -5,7 +5,8 @@ import Person from './components/Person'
 import { PersonList } from './components/PersonList';
 import Status from './components/Status'
 import Stick from './components/Stick'
-function App() {
+import StickBox from './components/StickBox';
+const App = () =>  {
   const personname = {
     first : 'YOLO' ,
     last : 'OHOH'
@@ -29,7 +30,11 @@ function App() {
       <Person name={personname}/>
       <PersonList names={personList}/>
       <Status status='success'/>
+      <StickBox>
       <Stick>Stick1</Stick>
+      <Stick>Stick2</Stick>
+      </StickBox>
+      
     </div>
   );
 };
