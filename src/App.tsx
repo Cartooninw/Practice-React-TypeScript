@@ -6,6 +6,8 @@ import { PersonList } from './components/PersonList';
 import Status from './components/Status'
 import Stick from './components/Stick'
 import StickBox from './components/StickBox';
+import Button from './components/Button'
+import Screeninput from './components/Screeninput';
 const App = () =>  {
   const personname = {
     first : 'YOLO' ,
@@ -34,7 +36,10 @@ const App = () =>  {
       <Stick>Stick1</Stick>
       <Stick>Stick2</Stick>
       </StickBox>
-      
+      <Button handleClick={(e,number) => {
+        console.log('button clicked')
+      }}/>
+      <Screeninput/>
     </div>
   );
 };

@@ -14,3 +14,4 @@ const Person = (props : persontype) => {
 }
 
 export default Person
+

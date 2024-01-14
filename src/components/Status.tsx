@@ -2,7 +2,7 @@ type StatusType = {
   status : 'loading' | 'success' | 'error' 
 }
 
-const Status = (props:StatusType) => {
+const Status = ( props:StatusType) => {
   let message ;
   if (props.status === 'loading') {
     message = 'loading. . .';
